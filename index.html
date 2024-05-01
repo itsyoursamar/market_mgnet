@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en"  >
+  <head>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Market Magnet</title>
+    <link rel="icon"  href="./logo(market magnet).png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Oldenburg&family=Poppins:wght@300;400&family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Market Magnet</a> -->
+        <!-- <li><img src="./logo(bull,bear).png" width="40px" height="40px" alt=""></li> -->
+
+
+        <h2 style="font-weight: 700;">  Market Magnet</h2>
+    
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+
+          <ul class="nav nav-pills">
+            <!-- <li class="nav-item">
+              <a href="./index.html" class="nav-link " aria-current="page">Home</a>
+            </li> -->
+            <!-- <li class="nav-item" id="nav-news"><a href="#news" class="nav-link" style="color: black; " >News</a></li> -->
+            <li class="nav-item" id="nav-exchange"><a href="#exchange" class="nav-link" style="color: black; " >Exchange Rate</a></li>
+            <li class="nav-item" id="nav-forex"><a href="#forex" class="nav-link" style="color: black;">Forex</a></li>
+            <li class="nav-item" id="nav-commodities"><a href="#commodities" class="nav-link" style="color: black;">Commodities</a></li>
+            <li class="nav-item" id="nav-bitcoin"><a href="#bitcoin" class="nav-link" style="color: black;">Bitcoin</a></li>
+            <li class="nav-item" id="nav-charts"><a href="./charts.html" class="nav-link" style="color: black;">Charts</a></li>
+            <li class="nav-item" id="nav-stock"><a href="./StockInfo.html" class="nav-link" style="color: black;">Stock Info</a></li>
+            <li class="nav-item" id="nav-compare"><a href="./compare.html" class="nav-link" style="color: black; " >Compare</a></li>
+          </ul>
+
+          <!-- <form class="d-flex" role="search"> -->
+            <!-- <input
+              id="search"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" id="searchClick" class="btn btn-dark">
+              Search
+            </button> -->
+
+            <!-- <div class="theme-switch">
+              <input type="checkbox" id="theme-checkbox">
+              <label for="theme-checkbox">
+                <div></div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.2003 10.2003 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path>
+                    </svg>
+                </span>
+                <span>
+                    <svg id="darkModeToggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                    </svg>
+                </span>
+              </label>
+          </div> -->
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height: 20px" >
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://in.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+            
+           {  "symbols" [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 2000"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR to USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+              }
+           ],
+          
+           {  "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "in"
+           }
+            
+        };
+      </script>
+    </div>
+<div class="display" id="display" data-aos="zoom-in">
+    <div class="quotes">
+      
+     <div > 
+     <div ><h id="quote" style="margin-top: 30px; font-weight: 620; font-family: 'varela Round'; "></h> </div>
+     <div id="line" style="margin-bottom: 20px;"></div>
+    </div> 
+   
+
+    <div class="lower" >
+      <h2 style="display: flex; align-items: center; flex-direction: column; gap: 7px;">
+
+       <div><span id="curday" style="font-weight: 700;">SUN </span> <span id="curdate">24 sept</span> </div> 
+       <div >  <span id="curtime" style="font-size: x-large;">1:20 PM</span></div>
+       
+      </h2> 
+       
+    </div>
+
+     
+        <!-- <div class="weather">
+          <div class="city">
+            <h1 id="cityName">New Delhi</h1>
+            <img
+              src="./sun.png"
+              height="40px"
+              width="40px"
+              alt="weather-icon"
+            />
+            <h1 id="cityTemp">31°c</h1>
+          </div> -->
+       
+        <!-- </div>  -->
+
+        <!-- <div class="dataInput">
+          <input type="text" placeholder="Enter City" id="cname" />
+          <button type="button" id="Submit" class="btn btn-success">
+            Submit
+          </button>
+        </div>
+        !-->
+   
+    </div>
+   
+     <div  class="img" data-aos="zoom-in" >
+        
+     </div>
+  </div>
+      
+    
+    
+     
+
+      <script>
+        const curday = document.getElementById("curday");
+        const curdate = document.getElementById("curdate");
+        const curtime = document.getElementById("curtime");
+function seting(){ 
+        var currentDate = new Date();
+
+        var dayOfWeek = currentDate.getDay();
+
+        var daysOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+
+        var currentDay = daysOfWeek[dayOfWeek];
+
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+      
+
+        let month = currentDate.getMonth() + 1;
+        var date =  currentDate.getDate() + ` ` + month + ` ` + currentDate.getFullYear();
+
+        var perios = " AM";
+
+        if (hours > 11) {
+          perios = " PM";
+          console.log("hey");
+          if (hours > 12) {
+            console.log("hello");
+            hours = hours - 12;
+          }
+        }
+
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+       
+        curday.innerHTML = `${currentDay},`;
+        curdate.innerHTML = date;
+
+     
+          var seconds = currentDate.getSeconds();
+          var time = `${hours}:${minutes}:${seconds}`;
+        document.getElementById('curtime').innerHTML = time + perios;
+    
+      };     
+       setInterval(()=>{
+         seting();
+            
+        },1000);
+
+   
+      
+       
+      </script>
+
+      <script>
+        const cityName = document.getElementById("cityName");
+        const cname = document.getElementById("cname");
+        const cityTemp = document.getElementById("cityTemp");
+        const Submit = document.getElementById("Submit");
+
+        Submit.addEventListener("click", () => {
+          var c = (cityName.innerHTML = cname.value);
+          setTimeout(() => {
+            cname.value = ``;
+          }, 1000);
+
+          var api = `https://api.openweathermap.org/data/2.5/weather?q=${c}&appid=ebf156df30d08ebb642e0b8081d948e7`;
+
+          fetch(api)
+            .then((response) => {
+              if (response.ok) {
+                return response.json();
+              } else {
+                throw new Error(`Error: ${response.status}`);
+              }
+            })
+            .then((data) => {
+              console.log(data);
+              var tem = data.main.temp - 273;
+              console.log(tem);
+              var temprature = Math.floor(tem);
+              console.log(temprature);
+
+              cityTemp.innerHTML = `${temprature}°c `;
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        });
+      </script>
+
+    
+
+      <script>
+        const quote = document.getElementById("quote");
+        const getq = document.getElementById("getq");
+
+        window.addEventListener("load", () => {
+          const Api = "https://type.fit/api/quotes";
+
+          fetch(Api)
+            .then((response) => {
+              if (response.ok) {
+                return response.json();
+              } else {
+                throw new Error(
+                  `Request failed with status: ${response.status}`
+                );
+              }
+            })
+            .then((dat) => {
+              console.log(dat);
+              const datL = Object.keys(dat).length;
+              const i = Math.ceil(Math.random() * 16);
+
+              console.log(i);
+              quote.innerHTML = dat[i].text;
+
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        });
+      </script>
+   
+   
+  
+
+    <script>
+      const one = document.getElementById("1");
+
+      one.addEventListener("click", () => {
+        const apiUrl =
+          " https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=VRZRXA8MCGTTDXBG";
+
+        fetch(apiUrl)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data[2].region);
+          })
+          .catch((error) => {
+            console.error(
+              "There was a problem with the fetch operation:",
+              error
+            );
+          });
+      });
+    </script>
+ 
+ <!-- <div class="news" id="news" style="display: flex; align-items: center; flex-direction: column; margin-top: 2px;">
+  <div id="bot">
+ <div><h1 style="font-weight: 700;">News </h1> </div> 
+  <div id="newsline" style="margin-bottom: 20px; "></div>
+  <div id="line" style="margin-bottom: 20px;"></div>
+</div>
+  <div class="bucke">
+     
+  
+    <div class="card"  >
+      <img src="" class="card-img-top" alt="..." id="bimg-1" data-aos="flip-left">
+      <div class="card-body">
+        <h5 class="card-title" id="btitle-1">Card title</h5>
+        <p class="card-text" id="bheadline-1">Error fetching data</p>
+        <a href="#" class="btn btn-primary" id="bgo-1">more</a>
+      </div>
+    </div>
+
+      <div class="card" >
+        <img src="" class="card-img-top" alt="..." id="bimg-2" data-aos="flip-left">
+        <div class="card-body">
+          <h5 class="card-title" id="btitle-2">Card title</h5>
+          <p class="card-text" id="bheadline-2">Error fetching data</p>
+          <a href="#" class="btn btn-primary" id="bgo-2">more</a>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="" class="card-img-top" alt="..." id="bimg-3" data-aos="flip-left">
+        <div class="card-body">
+          <h5 class="card-title" id="btitle-3">Card title</h5>
+          <p class="card-text" id="bheadline-3">Error fetching data</p>
+          <a href="#" class="btn btn-primary" id="bgo-3">more</a>
+        </div>
+      </div>
+
+   </div>
+
+  <div class="bucket">
+     
+  
+    <div class="card"  >
+      <img src="" class="card-img-top" alt="..." id="img-1" data-aos="flip-right">
+      <div class="card-body">
+        <h5 class="card-title" id="title-1">Card title</h5>
+        <p class="card-text" id="headline-1">Error fetching data</p>
+        <a href="#" class="btn btn-primary" id="go-1">more</a>
+      </div>
+    </div>
+
+      <div class="card" >
+        <img src="" class="card-img-top" alt="..." id="img-2" data-aos="flip-right"> 
+        <div class="card-body">
+          <h5 class="card-title" id="title-2">Card title</h5>
+          <p class="card-text" id="headline-2">Error fetching data</p>
+          <a href="#" class="btn btn-primary" id="go-2">more</a>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="" class="card-img-top" alt="..." id="img-3" data-aos="flip-right">
+        <div class="card-body">
+          <h5 class="card-title" id="title-3">Card title</h5>
+          <p class="card-text" id="headline-3">Error fetching data</p>
+          <a href="#" class="btn btn-primary" id="go-3">more</a>
+        </div>
+      </div>
+
+   </div> -->
+
+
+ </div>
+
+ <script>
+  var bimg1=document.getElementById('bimg-1');
+var btitle1=document.getElementById('btitle-1');
+var bheadline1=document.getElementById('bheadline-1');
+var bgo1=document.getElementById('bgo-1');
+
+var bimg2=document.getElementById('bimg-2');
+var btitle2=document.getElementById('btitle-2');
+var bheadline2=document.getElementById('bheadline-2');
+var bgo2=document.getElementById('bgo-2');
+
+var bimg3=document.getElementById('bimg-3');
+var btitle3=document.getElementById('btitle-3');
+var bheadline3=document.getElementById('bheadline-3');
+var bgo3=document.getElementById('bgo-3');
+
+var img1=document.getElementById('img-1');
+var title1=document.getElementById('title-1');
+var headline1=document.getElementById('headline-1');
+var go1=document.getElementById('go-1');
+
+var img2=document.getElementById('img-2');
+var title2=document.getElementById('title-2');
+var headline2=document.getElementById('headline-2');
+var go2=document.getElementById('go-2');
+
+var img3=document.getElementById('img-3');
+var title3=document.getElementById('title-3');
+var headline3=document.getElementById('headline-3');
+var go3=document.getElementById('go-3');
+
+
+
+// amzn
+var currentDate = new Date();
+
+let month = currentDate.getMonth() + 1;
+ let frmdate=currentDate.getDate() -3;
+  let currentdate=currentDate.getDate()
+
+ // Convert date to a string
+let dateString = frmdate.toString();
+let dateStrin= currentdate.toString();
+
+// Checking the length of the <string></string>
+if (dateString.length === 1 || dateStrin.length ===1) {
+  // Add a leading '0' if the length is 1
+   console.log("ky tumhe me for me dikha pa rha hu");
+  dateString = '0' + dateString;
+  if(currentdate<10){
+  dateStrin='0' + dateStrin;
+  }
+}
+
+ const frm=currentDate.getFullYear()+`-`+ month + '-' + dateString ;
+ console.log(frm+'frm ki value');
+ const tu=currentDate.getFullYear()+`-`+ month + '-' + dateStrin ;
+
+ console.log(tu+'to ki value');
+
+const urlamz=`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+fetch(urlamz)
+     .then((response) => {
+      if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+     })
+     .then((data) => {
+      console.log(data);
+  
+       var i = Math.ceil(Math.random() * 100);
+
+if(bimg1.src=data[i].image === '' )
+ {
+  bimg1.src=data[i+1].image; 
+ }
+ else{
+  bimg1.src=data[i].image; 
+ }
+
+       btitle1.innerHTML=data[i].headline;
+       bheadline1.innerHTML=`${data[i].summary}`;
+       bgo1.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(()=>{
+
+fetch(urlamz)
+.then((response) => {
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+})
+.then((data) => {
+
+
+  var i = Math.ceil(Math.random() * 100);
+ if(bimg1.src=data[i].image === '' )
+ {
+  bimg1.src=data[i+1].image; 
+ }
+ else{
+  bimg1.src=data[i].image; 
+ }
+  
+       btitle1.innerHTML=data[i].headline;
+       bheadline1.innerHTML=`${data[i].summary}`;
+       bgo1.href=`${data[i].url}`;
+
+
+})
+.catch((error) => {
+  console.error(
+    "There was a problem with the fetch operation:",
+    error
+  );
+});
+   },10000)  ;
+// amzn ends
+
+
+// msft starts
+
+const urlmsft=`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+fetch(urlmsft)
+     .then((response) => {
+      if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+     })
+     .then((data) => {
+      console.log(data);
+  
+       var i = Math.ceil(Math.random() * 100);
+
+ if(bimg2.src=data[i].image === '' )
+ {
+  bimg2.src=data[i+1].image; 
+ }
+ else{
+  bimg2.src=data[i].image; 
+ } 
+       
+       btitle2.innerHTML=data[i].headline;
+       bheadline2.innerHTML=`${data[i].summary}`;
+       bgo2.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(()=>{
+    
+
+fetch(urlmsft)
+.then((response) => {
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+})
+.then((data) => {
+
+
+  var i = Math.ceil(Math.random() * 100);
+  if(bimg2.src=data[i].image === '' )
+ {
+  bimg2.src=data[i+1].image; 
+ }
+ else{
+  bimg2.src=data[i].image; 
+ } 
+
+       btitle2.innerHTML=data[i].headline;
+       bheadline2.innerHTML=`${data[i].summary}`;
+       bgo2.href=`${data[i].url}`;
+
+})
+.catch((error) => {
+  console.error(
+    "There was a problem with the fetch operation:",
+    error
+  );
+});
+   },10000)  ;
+
+
+// msft ends   
+
+// tsla starts
+
+
+const urltsla =`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+   fetch(urltsla)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+   
+     
+       var i = Math.ceil(Math.random() * 100);
+
+if(bimg3.src=data[i].image === '' )
+ {
+  bimg3.src=data[i+1].image; 
+ }
+ else{
+  bimg3.src=data[i].image; 
+ }   
+
+       btitle3.innerHTML=data[i].headline;
+       bheadline3.innerHTML=`${data[i].summary}`;
+       bgo3.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(() => {
+  fetch(urltsla)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+   
+     
+       var i = Math.ceil(Math.random() * 100);
+
+if(bimg3.src=data[i].image === '' )
+ {
+  bimg3.src=data[i+1].image; 
+ }
+ else{
+  bimg3.src=data[i].image; 
+ }     
+ 
+       btitle3.innerHTML=data[i].headline;
+       bheadline3.innerHTML=`${data[i].summary}`;
+       bgo3.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+   }, 10000);
+  // tsla ends
+ </script>
+
+ <script>
+    // goog starts
+
+ const urlgoog=`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+fetch(urlgoog)
+     .then((response) => {
+      if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+     })
+     .then((data) => {
+  
+       var i = Math.ceil(Math.random() * 100);
+
+if(img1.src=data[i].image === '' )
+ {
+  img1.src=data[i+1].image; 
+ }
+ else{
+  img1.src=data[i].image; 
+ }     
+
+       title1.innerHTML=data[i].headline;
+       headline1.innerHTML=`${data[i].summary}`;
+       go1.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(()=>{
+    
+
+fetch(urlgoog)
+.then((response) => {
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+  return response.json();
+})
+.then((data) => {
+  var i = Math.ceil(Math.random() * 100);
+
+  if(img1.src=data[i].image === '' )
+ {
+  img1.src=data[i+1].image; 
+ }
+ else{
+  img1.src=data[i].image; 
+ }  
+
+title1.innerHTML=data[i].headline;
+headline1.innerHTML=`${data[i].summary}`;
+go1.href=`${data[i].url}`;
+
+})
+.catch((error) => {
+  console.error(
+    "There was a problem with the fetch operation:",
+    error
+  );
+});
+   },10000)  ;
+
+// goog ends
+
+// aapl starts`
+
+const urlaapl=`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+   fetch(urlaapl)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+   
+         var i = Math.ceil(Math.random() * 100);
+    
+if(img2.src=data[i].image === '' )
+ {
+  img2.src=data[i+1].image; 
+ }
+ else{
+  img2.src=data[i].image; 
+ }  
+      
+       title2.innerHTML=data[i].headline;
+       headline2.innerHTML=`${data[i].summary}`;
+       go2.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(() => {
+  fetch(urlaapl)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+   
+       var i = Math.ceil(Math.random() * 100);
+  
+if(img2.src=data[i].image === '' )
+ {
+  img2.src=data[i+1].image; 
+ }
+ else{
+  img2.src=data[i].image; 
+ }  
+       title2.innerHTML=data[i].headline;
+       headline2.innerHTML=`${data[i].summary}`;
+       go2.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+   }, 10000);
+  //  aapl ends
+
+  // meta starts
+   
+  const urlmeta =`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=COIN,CRYPTO:BTC,FOREX:USD&time_from=20240110T0100&limit=1000&apikey=Y8YXUKTPYG4SBFNG`;
+
+   fetch(urlmeta)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+       console.log(data);
+   
+         var i = Math.ceil(Math.random() * 100);
+
+         const filteredData = data.filter(item => item.image !== '');
+
+if(`${img3.src=data[i].image} `=== '' )
+ {
+  console.log('chal prha image');
+  img3.src=data[i+1].image; 
+ }
+ else{
+  img3.src=data[i].image; 
+ }  
+       
+       title3.innerHTML=data[i].headline;
+       headline3.innerHTML=`${data[i].summary}`;
+       go3.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+
+
+setInterval(() => {
+  fetch(urlmeta)
+     .then((response) => {
+       if (!response.ok) {
+         throw new Error("Network response was not ok");
+       }
+       return response.json();
+     })
+     .then((data) => {
+   
+      var i = Math.ceil(Math.random() * 100);
+       
+       img3.src=data[i][feed].image; 
+       title3.innerHTML=data[i].headline;
+       headline3.innerHTML=`${data[i].summary}`;
+       go3.href=`${data[i].url}`;
+  
+     })
+     .catch((error) => {
+       console.error(
+         "There was a problem with the fetch operation:",
+         error
+       );
+     });
+   }, 10000);
+  //  meta ends
+
+ </script>
+
+    
+
+
+  
+
+<div id="exchange" class="exchang" data-aos="zoom-out-up"> 
+  <div class="converter" id="converter" data-aos="flip-right">
+       
+    <div><h1>Conversion Rate</h1></div> 
+    <div> 
+     <label for="">From</label>
+     <input type="text" id="from" placeholder="Enter Currency" style="padding-left: 5px ;">
+    </div>
+    <div>
+     <label for="">To</label>
+     <input type="text" id="to" placeholder="Enter Currency" style="padding-left: 5px ;">  
+   </div>
+   <div>
+     <button type="button" id="btn" class="btn btn-secondary btn-sm" style="background-color: wheat; color: black; border-radius: 5px; ; height: 30pt;  ">Convert</button>
+   </div>
+    
+    <h4 id="rate" ></h4>
+   </div>
+
+   <div class="calci" data-aos="flip-left"> 
+    <input id="inputBox" type="text" placeholder="0" > 
+  <div>
+     <button class="btan" id="operator">AC</button>
+     <button  class="btan" id="operator">Del</button>
+     <button class="btan" id="operator">%</button>
+     <button class="btan" id="operator">/</button>
+   </div>  
+  
+   <div>
+     <button class="btan" >7</button>
+     <button class="btan" >8</button>
+     <button class="btan" >9</button>
+     <button  class="btan" id="operator">*</button>
+   </div> 
+  
+   <div> 
+     <button class="btan" >4</button>
+     <button class="btan" >5</button>
+     <button class="btan" >6</button>
+     <button  class="btan" id="operator">-</button>
+   </div>
+
+<div>
+     <button class="btan" >1</button>
+     <button class="btan" >2</button>
+     <button class="btan" >3</button>
+     <button  class="btan" id="operator">+</button>
+ </div>   
+ <div>
+   <button class="btan" >00</button>
+     <button class="btan">0</button>
+     <button class="btan">.</button>
+     <button  class="btan"  id="equalbtn">=</button>
+
+   </div> 
+
+   </div>
+  </div> 
+  
+  <div id="forex" data-aos="fade-up" >
+    
+    <div id="bot">
+      <div class="head"> <h1 style="font-weight: 700;">Forex</h1> </div>
+     <div id="newsline" style="margin-bottom: 20px; "></div>
+     </div>
+      <div class="content">
+        
+          <h4>Forex, or foreign exchange, refers to the global marketplace for buying and selling currencies. It's the largest and most liquid financial market in the world. Here are some key points to know about forex trading:</h4>
+       <div class="data"> 
+         <ul>
+          <li>
+            <b>Currency Pairs:</b> In forex trading, you trade one currency against another, which are known as currency pairs. The first currency in the pair is the base currency, and the second is the quote currency. For example, in the EUR/USD pair, EUR is the base currency, and USD is the quote currency.
+          </li>
+          <li>
+            <b>Market Participants:</b> Forex markets are decentralized, and participants include banks, financial institutions, corporations, governments, and individual traders. Retail traders access the forex market through brokers.
+          </li>
+          <li>
+            <b>Trading Hours:</b> Forex markets operate 24 hours a day, five days a week due to global time zone differences. The major trading centers are in Tokyo, London, and New York.
+          </li>
+          <li>
+            <b>Leverage:</b> Forex trading often involves leverage, which means traders can control a larger position size than their capital. While this can amplify profits, it also increases the risk of significant losses.
+          </li>
+          <li>
+            <b>Volatility: </b>  Forex markets can be highly volatile, with exchange rates subject to rapid fluctuations. News events, economic data releases, and geopolitical developments can all influence currency prices.
+          </li>
+          <li>
+            <b>Analysis: </b> Traders use various forms of analysis to make trading decisions. This includes technical analysis (using charts and indicators) and fundamental analysis (evaluating economic and geopolitical factors).
+          </li>
+          <li>
+            <b>Risk Management</b> Effective risk management is crucial in forex trading. Traders use stop-loss orders to limit potential losses and employ position sizing strategies.
+          </li>
+          <li>
+            <b>Brokers:</b> Retail traders access the forex market through brokers. It's important to choose a reputable and regulated broker with competitive spreads and good customer support.
+          </li>
+          <li>
+            <b>Demo Trading:</b> Before trading with real money, it's advisable to practice with a demo account to understand how forex markets work and develop a trading strategy.
+          </li>
+          <li>
+            <b>Regulation:</b> Forex markets are subject to varying degrees of regulation depending on the country and the type of broker. Regulatory bodies aim to protect traders and maintain market integrity.
+          </li>
+          <li>
+            <b>Taxation: </b> Tax laws regarding forex trading can vary by country. It's important to understand your tax obligations related to forex profits in your jurisdiction.
+          </li>
+          <li>
+            <b>Risk Warning:</b> Forex trading carries a high level of risk and is not suitable for all investors. It's possible to lose more than your initial investment.
+          </li>
+
+        </ul>
+      </div>
+      </div>
+      <!-- <div id="forex-api">
+         <ul>
+          <li><a href="./forex.html">Click here</a></li>
+         </ul>
+      </div> -->
+    
+      <div class="forex-after"> 
+       <!-- <div class="imge"><img src="./forex.png" width="520pt" height="180vh" alt=""></div> -->
+       
+      
+    </div>
+   
+    <script>
+        const from=document.getElementById('from');
+        const to=document.getElementById('to');
+        const btn=document.getElementById('btn');
+        const rate=document.getElementById('rate');
+
+btn.addEventListener('click',()=>{    
+const apiUrl = `https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=${from.value}&to_currency=${to.value}&apikey=VRZRXA8MCGTTDXBG`;
+
+
+fetch(apiUrl)
+  .then((response) => {
+   
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+   
+    return response.json();
+  })
+  .then((data) => {
+
+    console.log(data);
+    const exchangeValue=data["Realtime Currency Exchange Rate"]["5. Exchange Rate"];
+    console.log(exchangeValue);
+
+    rate.innerHTML=parseFloat(exchangeValue).toFixed(2);
+  })
+  .catch((error) => {
+
+    console.error('Fetch error:', error);
+  });
+
+
+})
+    </script>
+  </div>
+
+  <div id="commodities" data-aos="fade-up">
+    <div id="bot">
+      <div id="head"><h1 style="font-weight: 700;">Commodities</h1></div>
+       <div id="newsline" style="margin-bottom: 20px; "></div>
+      
+     </div>
+
+        
+
+        <div class="heading">
+           <h4>Commodities refer to raw materials or primary agricultural products that can be bought and sold, such as gold, oil, wheat, or coffee. These goods are typically uniform in quality and are produced by many different suppliers. Commodities are an essential part of the global economy and play a crucial role in various industries.</h4>
+        </div>
+  <div id="space"> 
+       <div id="types"> 
+         <h4 ><b>Types of Commodities:</b></h4>
+         <p>Commodities can be broadly categorized into two main groups:</p>
+
+          <b>a.</b> <u>Hard Commodities</u>: These are natural resources extracted from the Earth. Examples include metals (gold, silver, copper), energy resources (crude oil, natural gas), and agricultural products (wheat, corn, soybeans).
+          
+        <p>  <b>b.</b> <u>Soft Commodities</u>: Soft commodities refer to agricultural products that are grown rather than mined. Examples include coffee, cotton, sugar, and cocoa.
+         </p>
+        </div>
+
+        <div id="markets"> 
+          <h4 ><b>Commodity Markets:</b></h4>
+          <p>Commodities are traded in specialized markets, including:</p>
+ 
+           <b>a.</b> <u>Commodity Exchanges</u>: These are organized platforms where commodities are bought and sold. Examples include the Chicago Mercantile Exchange (CME) for futures contracts, the London Metal Exchange (LME) for metals, and the Intercontinental Exchange (ICE) for energy products.
+           
+         <p>  <b>b.</b> <u>Over-the-Counter<span> </span>(OTC)<span> </span>Markets</u>: Some commodities are traded directly between buyers and sellers without going through an exchange. These transactions are often facilitated by brokers or dealers.
+          </p>
+         </div>
+
+         <div id="trading"> 
+          <h4 ><b>Commodities Trading:</b></h4>
+          <p>Trading in commodities can take various forms, including spot trading and futures trading. Key concepts in commodities trading include:</p>
+ 
+           <b>a.</b> <u>Spot Market:</u>:  In the spot market, commodities are bought and sold for immediate delivery and payment. Prices in the spot market are influenced by current supply and demand conditions.
+           
+         <p>  <b>b.</b> <u>Futures Market</u>: In the futures market, contracts are traded that specify the future delivery of a commodity at a predetermined price. Futures contracts allow for speculation and hedging against price fluctuations.
+          </p>
+         </div>
+
+         <div id="role"> 
+          <h4 ><b>Role in the Economy:</b></h4>
+          <p>Commodities are essential for various industries and have a significant impact on the global economy. For example, crude oil is a fundamental input in the energy sector, while agricultural commodities are crucial for food production.</p>
+ 
+
+         </div>
+
+         <div id="price"> 
+          <h4 ><b>Price Volatility:</b></h4>
+          <p>Commodities prices can be highly volatile due to factors like weather conditions, geopolitical events, supply and demand imbalances, and currency fluctuations. This volatility can create both opportunities and risks for investors and producers.</p>
+ 
+
+         </div>
+
+         <div id="investment"> 
+          <h4 ><b>Investment:</b></h4>
+          <p>Some investors participate in commodity markets as a way to diversify their portfolios. They can invest directly by purchasing physical commodities or indirectly through commodity-focused exchange-traded funds (ETFs) or futures contracts.</p>
+ 
+
+         </div>
+
+         <div id="inflation"> 
+          <h4 ><b>Commodities and Inflation:</b></h4>
+          <p>Commodities are often considered a hedge against inflation because their prices tend to rise when the value of fiat currencies declines. Investors may allocate a portion of their portfolios to commodities to protect against the eroding purchasing power of money.</p>
+ 
+
+         </div>
+
+         <div id="environmental"> 
+          <h4 ><b>Environmental and Ethical Concerns:</b></h4>
+          <p>The extraction and production of certain commodities can have significant environmental and ethical implications. Issues like deforestation, pollution, and labor conditions have prompted calls for more sustainable and responsible practices in the commodities industry.</p>
+ 
+
+         </div>
+
+         <div id="environmental"> 
+          
+          <h4>In summary, commodities are essential resources that are traded globally in various markets. They serve as the building blocks of many industries and play a critical role in the functioning of the global economy. Commodities trading offers opportunities for investors and businesses but also comes with risks due to price volatility and other factors.</h4>
+ 
+
+         </div>
+
+         
+      </div>
+    
+  </div>
+
+  <div id="bitcoin" data-aos="fade-up">
+    <div id="bot">
+      <div id="head"><h1 style="font-weight: 700;">Bitcoin</h1></div>
+       <div id="newsline" style="margin-bottom: 20px; "></div>
+      
+     </div>
+    
+
+    <div class="heading">
+       <h4>Bitcoin is a decentralized digital currency, often referred to as a cryptocurrency, that was created in 2009 by an individual or group using the pseudonym Satoshi Nakamoto. Bitcoin is unique in that it operates on a peer-to-peer network, enabling direct transactions between users without the need for intermediaries like banks or financial institutions. Here's an overview of key aspects related to Bitcoin:</h4>
+    </div>
+
+<div id="space"> 
+
+
+    <div id="markets"> 
+      <h4 ><b>Blockchain Technology:</b></h4>
+      <p>Bitcoin operates on a technology called blockchain, which is a distributed ledger that records all transactions across a network of computers. This ledger is immutable, meaning that once a transaction is recorded, it cannot be altered or deleted, ensuring transparency and security.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Decentralization:</b></h4>
+      <p>Bitcoin is decentralized, meaning it is not controlled by any single entity, government, or central bank. Instead, it relies on a network of nodes (computers) that validate and record transactions, making it censorship-resistant and resilient to central points of failure.</p>
+      
+     </div>
+     <div id="markets"> 
+      <h4 ><b>Digital Scarcity: </b></h4>
+      <p>Bitcoin has a limited supply of 21 million coins. This scarcity is built into its code and controlled by a process called "halving," which reduces the rate at which new bitcoins are created approximately every four years. This scarcity is often cited as one of its key value propositions.</p>
+      
+     </div>
+     <div id="markets"> 
+      <h4 ><b>Mining: </b></h4>
+      <p>New bitcoins are created through a process called mining, where miners use computational power to solve complex mathematical puzzles. This process secures the network, validates transactions, and adds them to the blockchain. Miners are rewarded with newly created bitcoins and transaction fees for their efforts.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Wallets:</b></h4>
+      <p>To store and manage bitcoins, users need a digital wallet. Wallets can be software-based (online, mobile, desktop) or hardware-based (physical devices). Each wallet contains a private key, which is used to sign transactions and prove ownership of the bitcoins.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Transactions:</b></h4>
+      <p>Bitcoin transactions involve sending bitcoins from one wallet address to another. Transactions are recorded on the blockchain and can be viewed by anyone. They require the sender's private key for authorization and typically include a transaction fee paid to miners to prioritize processing.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Security:</b></h4>
+      <p> Bitcoin is considered secure due to its cryptographic design and the decentralized nature of the blockchain. However, users must take precautions to protect their private keys and wallets from theft or loss.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Volatility:</b></h4>
+      <p>Bitcoin's price has been highly volatile since its inception. It can experience significant price fluctuations over short periods, making it both a potential investment opportunity and a source of risk.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Use Cases:</b></h4>
+      <p>Bitcoin serves various purposes, including:</p>
+      <p><b>Digital Gold:</b> Some investors view Bitcoin as a store of value and a hedge against inflation, similar to gold.</p>
+      <p><b>Digital Cash:</b> Bitcoin can be used for online purchases and as a means of transferring value globally, often faster and with lower fees than traditional banking systems.</p>
+      <p><b>Speculation: </b> Many people buy and hold Bitcoin in the hope that its price will increase over time, allowing them to profit from price appreciation.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Regulation:</b></h4>
+      <p>The regulatory environment for Bitcoin varies by country. Some countries have embraced it, while others have imposed restrictions or bans. Governments and regulatory bodies are still developing policies to address cryptocurrencies.</p>
+      
+     </div>
+
+     <div id="markets"> 
+      <h4 ><b>Challenges:</b></h4>
+      <p>Bitcoin faces challenges such as scalability (the ability to handle a large number of transactions), energy consumption concerns related to mining, and ongoing debates about its role in the financial system.</p>
+      
+     </div>
+
+      <div id="markets"> 
+     
+      <h4>In summary, Bitcoin is a pioneering digital currency that operates on a decentralized blockchain, offering the potential for secure and transparent financial transactions. Its unique features, including scarcity and decentralization, have led to its widespread adoption and recognition as a significant innovation in the world of finance and technology. However, its volatility and regulatory challenges continue to shape its evolution and acceptance.</h4>
+      
+     </div>
+
+
+
+     
+  </div>
+
+</div>
+
+<div class="bg-dark text-secondary px-4 py-5 text-center" id="about" style="display: flex; justify-content: center; align-items: center;">
+
+  <div> 
+  <div class="py-5" style="display: flex; justify-content: space-evenly; align-items: center; flex-direction: row;">
+
+   <div id="logo"   style="display: flex; justify-content: start; align-items: center; flex-direction: column;"> 
+    <!-- <div class="down"> 
+    </div>
+    <div id="brand-name"> <h1 id="brand-name" class="display-5 fw-bold text-white">Market Magnet</h1> </div> -->
+     
+
+     <div>
+      <form action="https://formspree.io/f/mbjvwgar" method="post" class="contactUs" >
+         <h1>GET IN TOUCH</h1>
+          <input type="text" name="name" id="gname" placeholder="Your Name" required> 
+          <input type="text" name="email" id="gEmail" placeholder="Email id" required> 
+          <input type="text" name="phone" id="gPhone" placeholder="Phone no." required> 
+         <textarea  name="message" id="gques" placeholder="How can we help you?"></textarea>
+           <button id="gbtn" type="submit">Submit</button>
+          </form>
+     </div>
+  
+
+    </div> 
+    
+     
+    
+    <div class="col-lg-6 mx-auto" >
+      <p class="fs-5 mb-4">Explore the dynamic world of stocks with our website, offering a one-stop destination for market data, company profiles, and valuable insights to help you navigate the complexities of the stock market.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 40px;">
+
+   
+      <div> <a href="#nav"> <img src="./top_8020016.png" width="50px" height="50px" id="top" alt=""> </a> </div>
+
+       <div id="lang">  
+        <div id="google_translate_element"></div>
+        <script src="https://translate.google.com/translate_a/element.js?cb=translateInit"></script>
+        <script>
+          function translateInit() {
+            new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+            );
+          }
+        </script>
+         </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+</div>
+
+ 
+    
+  </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 300,
+      duraion: 2000,
+
+    });
+  </script>
+</html>

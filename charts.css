@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+  height: 340vh;
+  display: flex;
+
+  flex-direction: column;
+}
+#doc-nav {
+    /* background-color: rgba(0, 0, 0, 0.853); */
+     background-color: rgba(46, 134, 248, 0.511);
+    /* position: fixed; */
+
+}
+#doc-search{
+  width: 200px;
+  margin-left: 30px;
+}
+
+#doc-submit{
+  background-color: rgba(0, 128, 41, 0.858);
+  
+}
+ul, ol,li {
+    list-style-type: none;
+}
+/* rgba(40, 1, 56, 0.84) */
+#about{
+  width: 1140pt;
+  height: 40vh;
+  background-color:  rgba(0, 0, 0, 0.819);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.499);
+  gap: 5px;
+
+}
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.blink-text{
+  animation: blink 1s infinite;
+}
+
+#charts{
+  /* display: none; */
+  width: 800pt;
+  height: 700pt;
+  background-color: black;
+  margin-top: 50px;
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-direction: row;
+}
+
+#month{
+  background-color: transparent;
+  width: 800pt;
+  height: 90vh;
+  margin: 50px 50px 30px 80px;
+
+}
+#weekly{
+  background-color: transparent;
+  width: 800pt;
+  height: 90vh;
+  margin: 50px 50px 30px 80px;
+
+}
+
+#intraday{
+  background-color: transparent;
+  width: 800pt;
+  height: 90vh;
+  margin: 50px 50px 30px 50px;
+  
+
+}
+
+#data{
+  margin: 20px 100px 20px 100px;
+  padding: 0px;
+  gap: 0px;
+  /* font-size: small; */
+}
+#head{
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.499);
+}
+
+

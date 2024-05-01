@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    /* background-color: rgba(46, 137, 248, 0.511); */
+    background-color: rgba(16, 133, 0, 0.353);
+}
+
+.front{
+    width: 100%;
+    height: 96vh;
+    padding-left: 100px;
+    padding-right: 89px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+.left{
+    margin-top: 10px;
+    padding: 50px;
+    width: 50%;
+    height: 80vh;
+
+}
+
+#in{
+    color: #FF671F;
+}
+#d{
+   color: #06038D;
+}
+#ia{
+   color: #046A38;
+}
+
+.right{
+    padding: 0%;
+    width: 84%;
+    height: 90vh;
+    margin-top: -30px;
+    background-image: url(./piechart.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.discount-brokers{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+.full-service-brokers{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   
+
+}
+.other-emerging-brokers{
+
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   
+
+}
+
+#blue{
+    color: blue;
+}
+
+#desc{
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.data{
+    width: 80%;
+
+}
+
+li,ul{
+   list-style: none; 
+}
+
+#key-points{
+    margin-top: 40px;
+    display: flex;
+    gap:20px;
+
+}
+
+#broker{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+     padding-left: 80px;
+    padding-right: 80px; 
+
+}
+
+#broker2{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px; 
+    
+}
+#broke{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+#broke2{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#one{
+    width: 300pt;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+   
+}
+
+#nav-home:hover{
+ 
+    border-bottom:3px solid black;
+    font-size: larger;
+    border-bottom-style:inset ;
+    
+ }
+
+#nav-disc:hover{
+ 
+    border-bottom:3px solid black;
+    font-size: larger;
+    border-bottom-style:inset ;
+    
+ }
+#nav-full:hover{
+ 
+    border-bottom:3px solid black;
+    font-size: larger;
+    border-bottom-style:inset ;
+    
+ }
+#nav-other:hover{
+ 
+    border-bottom:3px solid black;
+    font-size: larger;
+    border-bottom-style:inset ;
+    
+ }

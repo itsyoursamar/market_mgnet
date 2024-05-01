@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+    <link rel="icon" href="./bar graph.png">
+    <link rel="stylesheet" href="./charts.css">
+<style>
+ .background-image {
+  /* Set the background image URL */
+  background-image:  linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./sl_022321_41020_27.jpg');
+
+  /* Set background properties */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Specify a fixed height for the container */
+  height: 300vh;
+
+  /* Ensure content inside this container is displayed above the background image */
+  position: relative;
+  z-index: 1;
+
+  /* padding: 30px; */
+  display: flex;
+ justify-content: start;
+ align-items: center;
+ flex-direction: column;
+
+}
+    </style>
+</head>
+<body>
+ 
+
+    <header id="doc-nav" class="d-flex justify-content-center py-3">
+       
+         <ul class="nav nav-pills">
+           
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+           <li class="nav-item">
+             <a href="./index.html" class="nav-link " aria-current="page" style="color: black;">Home</a>
+           </li>
+         
+           
+           <li  id="tohide" style="display: none;"  class="nav-item"><a href="#intraday" class="nav-link" style="color: black;">Intraday</a></li>
+           <li  id="tohid" style="display: none;" class="nav-item"><a href="#weekly" class="nav-link" style="color: black;">Weekly</a></li>
+          <li  id="tohi" style="display: none;" class="nav-item"><a href="#month" class="nav-link" style="color: black;">Monthly</a></li>
+           <li   class="nav-item"><a href="#about" class="nav-link" style="color: black;">About</a></li> 
+       
+         </ul>
+         <input
+         id="doc-search"
+         class="form-control me-2"
+         type="search"
+         placeholder="Search"
+         aria-label="Search"
+       />
+       <button type="button" id="doc-submit" class="btn btn-dark">
+         Search
+       </button>
+       </header>
+
+    <div class="background-image">
+      
+      <div class="blink-text" style="margin-top: 10px; display: block;" id="headline">
+          <h1>Search your respective chart</h1>
+      </div>
+      
+      <div id="intraday" >
+        <canvas id="ichart" width="300px" height="300px"></canvas>
+      </div>
+      <div id="weekly">
+        <canvas id="wchart" width="300px" height="300px"></canvas>
+      </div>
+   
+        <div id="month" > 
+            <canvas id="mchart" width="300px" height="300px"></canvas>
+          </div>
+
+       
+    </div>
+
+    <div id="about">
+      <div id="head">
+          <h1 ><u>About</u></h1>
+      </div>
+      <div>
+        <h5>Welcome to our interactive stock charting application! Our tool is designed to help you explore historical stock price data for various stocks easily.</h5>
+      </div>
+     <!-- <div id="data">   
+      <div><p><em>Stock Search:</em> Enter a stock symbol to search for historical price data.   </p> </div>
+        <div><p><em>Chart Types:</em> View monthly, weekly, and intraday stock charts.   </p> </div>
+          <div><p><em>Customization:</em> Customize charts with zoom and pan features.    </p></div>
+            <div><p><em>Stay Informed:</em>  Keep up with the latest stock market trends.    </p></div>
+          </div>  -->
+        <div> 
+          <h5 id="data">Whether you're a seasoned investor or just curious about stock market data, our application offers a user-friendly way to visualize stock price changes over time.
+            Get started by entering a stock symbol in the search box above and selecting the type of chart you'd like to see.</h5>
+          </div>
+       
+   
+      <div id="bottom" style="margin-top: 30px;">
+        <a href="#doc-nav"><img src="./top_8020016.png" width="40px" height="40px"   alt=""></a>  
+      </div>
+       
+
+    </div>
+    
+</body>
+
+<script>
+  setTimeout(()=>{  
+    const headline=document.getElementById('headline');
+headline.style.display='none';
+
+},3000);
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"
+></script>
+<script src="./charts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script> -->
+
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</html>
